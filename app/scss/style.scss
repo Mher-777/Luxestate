@@ -1,4 +1,42 @@
-@import 'global';
-@import 'vars';
-@import 'fonts';
-@import 'animation';
+@import "global";
+@import "vars";
+@import "fonts";
+@import "animation";
+
+.header {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    min-height: 95px;
+    align-items: center;
+  }
+  &__logo-link {
+    max-width: 200px;
+    width: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.header__menu {
+  &-item {
+    &:nth-child(6) {
+      margin-left: 80px;
+    }
+    &.current {
+      .header__menu-link {
+        background-color: #ffcc01;
+      }
+    }
+  }
+  &-link {
+    padding: 13px 15px;
+    border-radius: 4px;
+    color: #1f373d;
+    transition: .3s all;
+    &:hover {
+      background-color: #ffcc01;
+    }
+  }
+}
