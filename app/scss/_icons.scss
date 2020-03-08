@@ -1,0 +1,48 @@
+.icon-map {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 27px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/icons/icon-map.svg);
+  }
+}
+.icon-phone {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/icons/icon-phone.svg);
+  }
+}
+.icon-search {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/icons/icon-search.svg);
+  }
+}
+.icon-arrow{
+    position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 28px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/icons/icon-arrow__down.svg);
+  }
+}
