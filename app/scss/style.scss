@@ -375,19 +375,19 @@
     overflow: hidden;
     padding: 140px 0 65px;
     position: relative;
-    & + &{
+    & + & {
       margin-left: 35px;
     }
 
-    &::before{
-      content: '';
+    &::before {
+      content: "";
       position: absolute;
       background-color: #ffcc01;
       height: 100%;
       left: 0;
       top: 0;
       width: 0;
-      transition: .4s all;
+      transition: 0.4s all;
     }
     &-number {
       position: absolute;
@@ -396,14 +396,14 @@
       top: -45px;
       left: -45px;
       line-height: 125px;
-      transition: .4s all;
+      transition: 0.4s all;
     }
-    &:hover{
-      &::before{
+    &:hover {
+      &::before {
         width: 100%;
       }
       color: #fff;
-      .works__item-box-link::before{
+      .works__item-box-link::before {
         background-color: #fff;
       }
     }
@@ -414,10 +414,10 @@
   &-title {
     margin-bottom: 25px;
     position: relative;
-    transition: .4s all;
-    strong{
+    transition: 0.4s all;
+    strong {
       font-weight: 600;
-      &:first-child{
+      &:first-child {
         position: absolute;
         left: -20px;
       }
@@ -428,13 +428,13 @@
     letter-spacing: -0.33px;
     margin-bottom: 15px;
     position: relative;
-    transition: .4s all;
+    transition: 0.4s all;
   }
   &-link {
     color: inherit;
     padding-bottom: 10px;
     position: relative;
-    transition: .4s all;
+    transition: 0.4s all;
     &::before {
       content: "";
       position: absolute;
@@ -443,6 +443,53 @@
       width: 100%;
       background-color: #1f373d;
       height: 2px;
+    }
+  }
+}
+.services {
+  padding-bottom: 70px;
+  &__top {
+    margin-bottom: 55px;
+    max-width: 360px;
+    &-description {
+      line-height: 30px;
+      letter-spacing: -0.33px;
+      font-weight: 500;
+    }
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    &-bg {
+      max-width: 651px;
+      width: 100%;
+      margin-right: 20px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      min-height: 631px;
+      margin-left: -105px;
+    }
+  }
+}
+.services-content {
+  max-width: 450px;
+  width: 100%;
+  &__title {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.63px;
+    margin-bottom: 30px;
+  }
+  &__text {
+    line-height: 30px;
+    letter-spacing: -0.33px;
+  }
+  &__row{
+     margin-bottom: 50px;
+    &:last-child{
+     margin-bottom: 0;
     }
   }
 }
