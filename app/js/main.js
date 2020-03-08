@@ -26,6 +26,21 @@ $(function () {
             a = 1;
         }
     });
+
+    $('.agents__slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        cssEase: 'ease-in',
+        speed: 400,
+        autoplay: true,
+        autoplaySpeed: 1200,
+        centerPadding: '0',
+        pauseOnHover: true,
+        rows: 0,
+        
+    });
+
     $('.appartments__item').slice(0, 6).show();
     $('.appartments__bottom-btn').on('click', function (e) {
         e.preventDefault();
