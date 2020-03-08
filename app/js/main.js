@@ -25,7 +25,11 @@ $(function () {
             });
             a = 1;
         }
-
+    });
+    $('.appartments__item').slice(0, 6).show();
+    $('.appartments__bottom-btn').on('click', function (e) {
+        e.preventDefault();
+        $('.appartments__item:hidden').slice(0, 3).slideDown();
     });
 
 })

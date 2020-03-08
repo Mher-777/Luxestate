@@ -34,8 +34,8 @@
     background-image: url(../images/icons/icon-search.svg);
   }
 }
-.icon-arrow{
-    position: relative;
+.icon-arrow {
+  position: relative;
   &::before {
     content: "";
     position: absolute;
@@ -44,5 +44,29 @@
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../images/icons/icon-arrow__down.svg);
+  }
+}
+.icon-shower {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/icons/icon-shower.svg);
+  }
+}
+.icon-hotel {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/icons/icon-hotel.svg);
   }
 }

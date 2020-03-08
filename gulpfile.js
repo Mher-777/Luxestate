@@ -24,6 +24,7 @@ gulp.task('style', function () {
         'node_modules/normalize.css/normalize.css',
         'node_modules/slick-carousel/slick/slick.css',
         'node_modules/animate.css/animate.css',
+        'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
     ])
         .pipe(concat('libs.min.css'))
         .pipe(cssmin())
@@ -47,6 +48,7 @@ gulp.task('script', function () {
     return gulp.src([
         'node_modules/slick-carousel/slick/slick.js',
         'node_modules/wow.js/dist/wow.js',
+        'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
