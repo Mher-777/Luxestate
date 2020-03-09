@@ -65,19 +65,42 @@ $(function () {
         $('html, body').animate({
             scrollTop: $(".our-company").offset().top
         }, 1000);
-    })
+    });
+
     $('.header__hamburger').on('click', function () {
         $('.header__menu').slideToggle();
-    })
-    // var typed = new Typed('.main-screen__form-input', {
-    //     strings: ['Search locations...'],
-    //     typeSpeed: 80,
-    //     backSpeed: 70,
-    //     attr: 'placeholder',
-    //     bindInputFocusEvents: true,
-    // });
-    // new WOW().init({
-    //     offset: 150, 
+    });
 
-    // });
+    $.fn.scrollToTop = function () {
+        $(this).hide().removeAttr("href");
+        if ($(window).scrollTop() != "0") {
+            $(this).fadeIn("slow")
+        }
+        var scrollDiv = $(this);
+        $(window).scroll(function () {
+            if ($(window).scrollTop() == "0") {
+                $(scrollDiv).fadeOut("slow")
+            } else {
+                $(scrollDiv).fadeIn("slow")
+            }
+        });
+        $(this).click(function () {
+            $("html, body").animate({ scrollTop: 0 }, "slow")
+        })
+    };
+    $(function () { $("#toTop").scrollToTop(); });
+
+    var typed = new Typed('.main-screen__form-input', {
+        strings: ['Search locations...', 'Search  locations...'],
+        typeSpeed: 80,
+        backSpeed: 70,
+        attr: 'placeholder',
+        bindInputFocusEvents: true,
+        loop: true,
+    });
+
+
+    new WOW().init({
+        offset: 200, 
+    });
 })

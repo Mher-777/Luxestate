@@ -17,6 +17,11 @@
     justify-content: space-between;
     min-height: 95px;
     align-items: center;
+    &:after {
+      content: "";
+      min-height: inherit;
+      font-size: 0;
+    }
   }
   &__logo-link {
     max-width: 200px;
@@ -779,5 +784,27 @@
 .main-screen__content {
   width: 100%;
 }
-
+#toTop {
+  position: fixed;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(0, 0, 0, 0.2);
+  right: 10px;
+  bottom: 10px;
+  z-index: 40;
+  cursor: pointer;
+  padding: 12px;
+  &::before {
+    content: "";
+    background-image: url(../images/icons/arrow-up.svg);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+    animation-name: fadeInUp;
+    animation-iteration-count: infinite;
+    animation-duration: 1.7s;
+    animation-fill-mode: both;
+  }
+}
 @import "media";
