@@ -38,7 +38,21 @@ $(function () {
         centerPadding: '0',
         pauseOnHover: true,
         rows: 0,
-        
+        responsive: [
+            {
+                breakpoint: 825,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 590,
+                settings: {
+                    slidesToShow: 1,
+                    fade: true,
+                }
+            },
+        ]
     });
 
     $('.appartments__item').slice(0, 6).show();
@@ -47,4 +61,23 @@ $(function () {
         $('.appartments__item:hidden').slice(0, 3).slideDown();
     });
 
+    $(".main-screen__arrow").click(function () {
+        $('html, body').animate({
+            scrollTop: $(".our-company").offset().top
+        }, 1000);
+    })
+    $('.header__hamburger').on('click', function () {
+        $('.header__menu').slideToggle();
+    })
+    // var typed = new Typed('.main-screen__form-input', {
+    //     strings: ['Search locations...'],
+    //     typeSpeed: 80,
+    //     backSpeed: 70,
+    //     attr: 'placeholder',
+    //     bindInputFocusEvents: true,
+    // });
+    // new WOW().init({
+    //     offset: 150, 
+
+    // });
 })

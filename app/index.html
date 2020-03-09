@@ -16,34 +16,39 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <div class="header__logo">
+                <div class="header__logo animated fadeInLeft">
                     <a href="#" class="header__logo-link">
                         <img src="./images/header__logo.png" alt="">
                     </a>
                 </div>
                 <ul class="header__menu">
-                    <li class="header__menu-item">
+                    <li class="header__menu-item animated fadeInDown">
                         <a href="#" class="header__menu-link">About</a>
                     </li>
-                    <li class="header__menu-item">
+                    <li class="header__menu-item animated fadeInDown">
                         <a href="#" class="header__menu-link">Appartments</a>
                     </li>
-                    <li class="header__menu-item">
+                    <li class="header__menu-item animated fadeInDown">
                         <a href="#" class="header__menu-link">How It Work</a>
                     </li>
-                    <li class="header__menu-item">
+                    <li class="header__menu-item animated fadeInDown">
                         <a href="#" class="header__menu-link">Agents</a>
                     </li>
-                    <li class="header__menu-item">
+                    <li class="header__menu-item animated fadeInDown">
                         <a href="#" class="header__menu-link">Contact Us</a>
                     </li>
-                    <li class="header__menu-item">
+                    <li class="header__menu-item animated fadeInDown">
                         <a href="#" class="header__menu-link">Join Us</a>
                     </li>
-                    <li class="header__menu-item current">
+                    <li class="header__menu-item animated fadeInDown current">
                         <a href="#" class="header__menu-link">Getting Started</a>
                     </li>
                 </ul>
+                <div class="header__hamburger">
+                    <span class="header__hamburger-line"></span>
+                    <span class="header__hamburger-line"></span>
+                    <span class="header__hamburger-line"></span>
+                </div>
             </div>
         </div>
     </header>
@@ -55,21 +60,23 @@
                     Scroll Down
                 </div>
                 <div class="main-screen__content">
-                    <div class="main-screen__title">
+                    <div class="main-screen__title animated fadeInLeft ">
                         Find Your New
                         Modern Apartment
                     </div>
-                    <form action="#" class="main-screen__form">
+                    <form action="#" class="main-screen__form animated fadeInUp">
                         <div class="main-screen__form-inner icon-search">
-                            <input class="main-screen__form-input" type="text" placeholder="Search locations" required>
+                            <input class="main-screen__form-input" type="text" required>
                             <button class="main-screen__form-btn" type="submit">Search</button>
                         </div>
                     </form>
                 </div>
-                <div class="main-screen__bg" style="background-image: url(./images/main-screen__bg.jpg);">
-                    <div class="main-screen__info">
-                        <a href="tel:0001234567" class="main-screen__info-text icon-phone">(000) 123-4567</a>
-                        <a href="#" class="main-screen__info-text icon-map">Melbourne,Australia</a>
+                <div class="main-screen__bg animated zoomInDown"
+                    style="background-image: url(./images/main-screen__bg.jpg);">
+                    <div class="main-screen__info animated zoomIn">
+                        <a href="tel:0001234567" class="main-screen__info-text icon-phone animated zoomIn">(000)
+                            123-4567</a>
+                        <a href="#" class="main-screen__info-text icon-map animated zoomIn">Melbourne,Australia</a>
                     </div>
                 </div>
             </div>
@@ -78,7 +85,7 @@
     <section class="our-company">
         <div class="container">
             <div class="our-company__inner">
-                <div class="our-company__content">
+                <div class="our-company__content wow fadeInLeft">
                     <div class="our-company__title title">
                         Our’s Company
                         Statistics
@@ -96,10 +103,10 @@
                             drive adoption and awareness. Screw the pooch killing it.</p>
                     </div>
                 </div>
-                <div class="our-company__statistics">
+                <div class="our-company__statistics wow fadeInRight">
                     <div class="our-company__item">
                         <div class="our-company__item-box">
-                            <div class="our-company__number" data-count="748"></div>
+                            <div class="our-company__number" data-count="748">0</div>
                             <div class="our-company__item-text">
                                 Appartments
                             </div>
@@ -107,7 +114,7 @@
                     </div>
                     <div class="our-company__item">
                         <div class="our-company__item-box">
-                            <div class="our-company__number" data-count="3854"></div>
+                            <div class="our-company__number" data-count="3854">0</div>
                             <div class="our-company__item-text">
                                 Clients
                             </div>
@@ -115,7 +122,7 @@
                     </div>
                     <div class="our-company__item">
                         <div class="our-company__item-box">
-                            <div class="our-company__number" data-count="24"></div>
+                            <div class="our-company__number" data-count="24">0</div>
                             <div class="our-company__item-text">
                                 Employees
                             </div>
@@ -123,7 +130,7 @@
                     </div>
                     <div class="our-company__item">
                         <div class="our-company__item-box">
-                            <div class="our-company__number" data-count="14"></div>
+                            <div class="our-company__number" data-count="14">0</div>
                             <div class="our-company__item-text">
                                 Awards
                             </div>
@@ -135,7 +142,7 @@
     </section>
     <section class="appartments">
         <div class="container">
-            <div class="appartments__top">
+            <div class="appartments__top wow fadeInUp">
                 <div class="appartments__top-title title">
                     More Then 500+
                     Appartments For Rent
@@ -143,7 +150,7 @@
             </div>
             <div class="appartments__inner">
                 <div class="appartments__row">
-                    <div class="appartments__item">
+                    <div class="appartments__item wow zoomIn" data-wow-delay="0">
                         <a href="./images/appartments-item__images01.jpg" data-fancybox="images"
                             class="appartments__item-img"
                             style="background-image: url(./images/appartments-item__images01.jpg);"></a>
@@ -158,7 +165,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="appartments__item">
+                    <div class="appartments__item wow zoomIn" data-wow-delay=".2s">
                         <a href="./images/appartments-item__images02.jpg" data-fancybox="images"
                             class="appartments__item-img"
                             style="background-image: url(./images/appartments-item__images02.jpg);"></a>
@@ -173,7 +180,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="appartments__item">
+                    <div class="appartments__item  wow zoomIn" data-wow-delay=".4s">
                         <a href="./images/appartments-item__images03.jpg" data-fancybox="images"
                             class="appartments__item-img"
                             style="background-image: url(./images/appartments-item__images03.jpg);"></a>
@@ -190,7 +197,7 @@
                     </div>
                 </div>
                 <div class="appartments__row">
-                    <div class="appartments__item">
+                    <div class="appartments__item wow zoomIn" data-wow-delay="0s">
                         <a href="./images/appartments-item__images04.jpg" data-fancybox="images"
                             class="appartments__item-img"
                             style="background-image: url(./images/appartments-item__images04.jpg);"></a>
@@ -205,7 +212,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="appartments__item">
+                    <div class="appartments__item wow zoomIn" data-wow-delay=".2s">
                         <a href="./images/appartments-item__images05.jpg" data-fancybox="images"
                             class="appartments__item-img"
                             style="background-image: url(./images/appartments-item__images05.jpg);"></a>
@@ -220,7 +227,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="appartments__item">
+                    <div class="appartments__item wow zoomIn" data-wow-delay=".4s">
                         <a href="./images/appartments-item__images06.jpg" data-fancybox="images"
                             class="appartments__item-img"
                             style="background-image: url(./images/appartments-item__images06.jpg);"></a>
@@ -237,7 +244,7 @@
                     </div>
                 </div>
                 <div class="appartments__row">
-                    <div class="appartments__item">
+                    <div class="appartments__item wow zoomIn" data-wow-delay="0s">
                         <a href="./images/appartments-item__images04.jpg" data-fancybox="images"
                             class="appartments__item-img"
                             style="background-image: url(./images/appartments-item__images04.jpg);"></a>
@@ -252,7 +259,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="appartments__item">
+                    <div class="appartments__item wow zoomIn" data-wow-delay=".2s">
                         <a href="./images/appartments-item__images05.jpg" data-fancybox="images"
                             class="appartments__item-img"
                             style="background-image: url(./images/appartments-item__images05.jpg);"></a>
@@ -267,7 +274,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="appartments__item">
+                    <div class="appartments__item wow zoomIn" data-wow-delay=".4s">
                         <a href="./images/appartments-item__images06.jpg" data-fancybox="images"
                             class="appartments__item-img"
                             style="background-image: url(./images/appartments-item__images06.jpg);"></a>
@@ -284,7 +291,7 @@
                     </div>
                 </div>
                 <div class="appartments__row">
-                    <div class="appartments__item">
+                    <div class="appartments__item wow zoomIn" data-wow-delay="0s">
                         <a href="./images/appartments-item__images04.jpg" data-fancybox="images"
                             class="appartments__item-img"
                             style="background-image: url(./images/appartments-item__images04.jpg);"></a>
@@ -299,7 +306,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="appartments__item">
+                    <div class="appartments__item wow zoomIn" data-wow-delay=".2s">
                         <a href="./images/appartments-item__images05.jpg" data-fancybox="images"
                             class="appartments__item-img"
                             style="background-image: url(./images/appartments-item__images05.jpg);"></a>
@@ -314,7 +321,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="appartments__item">
+                    <div class="appartments__item wow zoomIn" data-wow-delay=".4s">
                         <a href="./images/appartments-item__images06.jpg" data-fancybox="images"
                             class="appartments__item-img"
                             style="background-image: url(./images/appartments-item__images06.jpg);"></a>
@@ -330,12 +337,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="appartments__bottom">
+                <div class="appartments__bottom wow fadeInLeft">
                     <form action="#" class="appartments__bottom-search appartments-search icon-search">
                         <input class="appartments-search__input" type="text" placeholder="Search locations" required>
                         <button class="appartments-search__btn" type="submit">Search</button>
                     </form>
-                    <button type="buton" class="appartments__bottom-btn">View All Appartments</button>
+                    <button type="buton" class="appartments__bottom-btn wow pulse">View All Appartments</button>
                 </div>
             </div>
         </div>
@@ -343,7 +350,7 @@
 
     <section class="works">
         <div class="container">
-            <div class="works__top">
+            <div class="works__top wow fadeInUp">
                 <div class="works__top-title title">How it works?</div>
                 <div class="works__top-description">
                     In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap by eod, cob
@@ -352,7 +359,7 @@
                 </div>
             </div>
             <div class="works__inner">
-                <div class="works__item">
+                <div class="works__item wow fadeInUp">
                     <div class="works__item-number">01</div>
                     <div class="works__item-box">
                         <div class="works__item-box-title">
@@ -365,7 +372,7 @@
                         <a href="#" class="works__item-box-link">Find Location</a>
                     </div>
                 </div>
-                <div class="works__item">
+                <div class="works__item wow fadeInUp" data-wow-delay=".2s">
                     <div class="works__item-number">02</div>
                     <div class="works__item-box">
                         <div class="works__item-box-title">
@@ -378,7 +385,7 @@
                         <a href="#" class="works__item-box-link">Find Appartment</a>
                     </div>
                 </div>
-                <div class="works__item">
+                <div class="works__item wow fadeInUp" data-wow-delay=".4s">
                     <div class="works__item-number">03</div>
                     <div class="works__item-box">
                         <div class="works__item-box-title">
@@ -396,7 +403,7 @@
     </section>
     <section class="services">
         <div class="container">
-            <div class="services__top">
+            <div class="services__top wow fadeInUp">
                 <div class="services__top-title title">
                     Services
                 </div>
@@ -406,35 +413,42 @@
                 </div>
             </div>
             <div class="services__inner">
-                <div class="services__inner-bg" style="background-image: url(./images/services__bg.jpg);"></div>
+                <div class="services__inner-bg wow fadeInLeft"
+                    style="background-image: url(./images/services__bg.jpg);"></div>
                 <div class="services__inner-contant services-content">
-                    <div class="services-content__row">
+                    <div class="services-content__row wow fadeInRight" data-wow-delay="0">
                         <div class="services-content__title">
                             Renting
                         </div>
                         <div class="services-content__text">
-                            In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap by eod, cob or whatever comes
-                            first agile at the end of the day. Not enough bandwidth closing these latest prospects is like putting socks on an
+                            In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap by
+                            eod, cob or whatever comes
+                            first agile at the end of the day. Not enough bandwidth closing these latest prospects is
+                            like putting socks on an
                             octopus, yet due diligence
                         </div>
                     </div>
-                    <div class="services-content__row">
+                    <div class="services-content__row wow fadeInRight" data-wow-delay=".2s">
                         <div class="services-content__title">
                             Selling
                         </div>
                         <div class="services-content__text">
-                            In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap by eod, cob or whatever comes
-                            first agile at the end of the day. Not enough bandwidth closing these latest prospects is like putting socks on an
+                            In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap by
+                            eod, cob or whatever comes
+                            first agile at the end of the day. Not enough bandwidth closing these latest prospects is
+                            like putting socks on an
                             octopus, yet due diligence
                         </div>
                     </div>
-                    <div class="services-content__row">
+                    <div class="services-content__row wow fadeInRight" data-wow-delay=".4s">
                         <div class="services-content__title">
                             Building
                         </div>
                         <div class="services-content__text">
-                            In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap by eod, cob or whatever comes
-                            first agile at the end of the day. Not enough bandwidth closing these latest prospects is like putting socks on an
+                            In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap by
+                            eod, cob or whatever comes
+                            first agile at the end of the day. Not enough bandwidth closing these latest prospects is
+                            like putting socks on an
                             octopus, yet due diligence
                         </div>
                     </div>
@@ -442,18 +456,19 @@
             </div>
         </div>
     </section>
-    <section class="agents">
+     <section class="agents">
         <div class="container">
-            <div class="agents__top">
+            <div class="agents__top wow fadeInUp">
                 <div class="agents__top-title title">
                     Meet Our Agents
                 </div>
                 <div class="agents__top-description">
-                    In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap by eod, cob or whatever comes
+                    In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap by eod, cob
+                    or whatever comes
                     first agile at the end of the day.
                 </div>
             </div>
-            <div class="agents__slider">
+            <div class="agents__slider wow fadeInUp">
                 <div class="agents__item">
                     <div class="agents__item-img" style="background-image: url(./images/agents__item-img01.jpg);"></div>
                     <div class="agents__item-info">
@@ -545,45 +560,51 @@
         <div class="container">
             <div class="adds__inner">
                 <div class="adds__row">
-                    <div class="adds__row-bg" style="background-image: url(./images/adds__images01.jpg);">
+                    <div class="adds__row-bg wow fadeInLeft" style="background-image: url(./images/adds__images01.jpg);">
                         <a href="#" class="adds__row-link icon-map">Melbourne,Australia</a>
                     </div>
-                    <div class="adds__row-content">
+                    <div class="adds__row-content wow fadeInRight">
                         <div class="adds__row-title">
                             Super Awesome Add
                         </div>
                         <div class="adds__row-text">
-                            In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap by eod, cob or whatever comes
-                            first agile at the end of the day. Not enough bandwidth closing these latest prospects is like putting socks on an
+                            In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap by
+                            eod, cob or whatever comes
+                            first agile at the end of the day. Not enough bandwidth closing these latest prospects is
+                            like putting socks on an
                             octopus, yet due diligence
                         </div>
                     </div>
                 </div>
                 <div class="adds__row row-reverse">
-                    <div class="adds__row-bg" style="background-image: url(./images/adds__images02.jpg);">
+                    <div class="adds__row-bg wow fadeInRight" style="background-image: url(./images/adds__images02.jpg);">
                         <a href="#" class="adds__row-link icon-map">Melbourne,Australia</a>
                     </div>
-                    <div class="adds__row-content">
+                    <div class="adds__row-content wow fadeInLeft">
                         <div class="adds__row-title">
                             Super Awesome Add
                         </div>
                         <div class="adds__row-text">
-                            In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap by eod, cob or whatever comes
-                            first agile at the end of the day. Not enough bandwidth closing these latest prospects is like putting socks on an
+                            In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap by
+                            eod, cob or whatever comes
+                            first agile at the end of the day. Not enough bandwidth closing these latest prospects is
+                            like putting socks on an
                             octopus, yet due diligence
                         </div>
                     </div>
                 </div>
                 <div class="adds__row">
-                    <div class="adds__row-bg" style="background-image: url(./images/adds__images03.jpg);"></div>
-                    <div class="adds__row-content">
+                    <div class="adds__row-bg wow fadeInLeft" style="background-image: url(./images/adds__images03.jpg);"></div>
+                    <div class="adds__row-content wow fadeInRight">
                         <div class="adds__row-title">
                             Super Awesome Add
                         </div>
                         <div class="adds__row-text">
-                            In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap by eod, cob or
+                            In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap by
+                            eod, cob or
                             whatever comes
-                            first agile at the end of the day. Not enough bandwidth closing these latest prospects is like putting socks
+                            first agile at the end of the day. Not enough bandwidth closing these latest prospects is
+                            like putting socks
                             on an
                             octopus, yet due diligence
                         </div>
@@ -593,6 +614,97 @@
             </div>
         </div>
     </section>
+   <footer class="footer wow zoomInUp">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__top-inner">
+                    <div class="footer__top-title">
+                        luxestate
+                        Explore Real Estate
+                    </div>
+                    <form action="#" class="footer__top-form">
+                        <input type="text" class="footer__top-input" placeholder="Subscribe To Our Newsletter" required>
+                        <button type="submit" class="footer__top-btn"></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__inner">
+                <div class="footer__copy">
+                    <a href="#" class="footer__copy-logo">
+                        luxestate
+                         <!-- <img src="./images/footer-logo.svg" alt="">  -->
+                    </a>
+                    <div class="footer__copy-text">
+                        © 2019 - luxestate,
+                        All Right Reserved
+                    </div>
+                </div>
+                <div class="footer__row">
+                    <div class="footer__col">
+                        <div class="footer__col-title">
+                            LUXESTATE
+                        </div>
+                        <ul class="footer__col-list">
+                            <li class="footer__col-item">
+                                <a href="#" class="footer__col-link">Agents</a>
+                            </li>
+                            <li class="footer__col-item">
+                                <a href="#" class="footer__col-link">Hunters</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <div class="footer__col-title">
+                            COMPANY
+                        </div>
+                        <ul class="footer__col-list">
+                            <li class="footer__col-item">
+                                <a href="#" class="footer__col-link">About</a>
+                            </li>
+                            <li class="footer__col-item">
+                                <a href="#" class="footer__col-link">FAQ</a>
+                            </li>
+                            <li class="footer__col-item">
+                                <a href="#" class="footer__col-link">Contact</a>
+                            </li>
+                            <li class="footer__col-item">
+                                <a href="#" class="footer__col-link">Social</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <div class="footer__col-title">
+                            PRODUCT
+                        </div>
+                        <ul class="footer__col-list">
+                            <li class="footer__col-item">
+                                <a href="#" class="footer__col-link">Appartments</a>
+                            </li>
+                            <li class="footer__col-item">
+                                <a href="#" class="footer__col-link">How It Works</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <div class="footer__col-title">
+                            SERVICES
+                        </div>
+                        <ul class="footer__col-list">
+                            <li class="footer__col-item">
+                                <a href="#" class="footer__col-link">Renting</a>
+                            </li>
+                            <li class="footer__col-item">
+                                <a href="#" class="footer__col-link">Selling</a>
+                            </li>
+                            <li class="footer__col-item">
+                                <a href="#" class="footer__col-link">Building</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/libs.min.js"></script>
     <script src="./js/main.js"></script>
